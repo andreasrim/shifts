@@ -4,7 +4,7 @@ from datetime import *
 def calculate_shiftweek():
     start_week = datetime.today().isocalendar()[1]
     for i in range(20):
-        shift_week = shift_week % 6
+        shift_week = start_week % 6
         print("UKEnr: " + str(start_week) + " Turnusuke: " + str(shift_week + 1) + ' ' + find_shifts_for_week(shift_week))
         start_week += 1
 
